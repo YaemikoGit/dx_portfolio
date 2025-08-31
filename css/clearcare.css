@@ -130,18 +130,21 @@
 .er img:hover, .arch img:hover {
   transform: scale(1.05);
 }
-
-
-.arch-desc p {
-  color:#000000;
+.arch img {
+    width: 45%;
 }
+
 
 .arch-brief {
   width: 550px;
 }
 
+.use-case p, .arch-brief p{
+  color:#000000;
+}
+
 #demo {
-  width: 550px;
+  width: 650px;
   padding: 1rem;
   background: white;
 }
