@@ -252,6 +252,7 @@ body {
   background-color: #fffbf6;
 }
 
+
 /* .wrapper {
     margin-right: auto;
     margin-left:  auto;
@@ -514,7 +515,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   ul {
     text-align: left;
   }
