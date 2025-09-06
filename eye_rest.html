@@ -72,117 +72,120 @@
     <!-- Highlight -->
     <section class="moreInfo">
         <div class="container">
-            <h3 class="text-center">Highlights</h3>
+            <div class="inner-wrapper">
+                <h3 class="text-center">Highlights</h3>
 
-            <h4 class="my-3">Key Features</h4>
-            <p class="text-dark">Insert description TBC</p>
-            <div class="my-5 d-flex align-items-center">
-                <div class="er text-center">
-                    <img class="" src="assets/eyeRest/guided_eye.png" 
-                    data-full="assets/eyeRest/guided_eye_full.png" alt="Guided Eye Exercise"
-                    data-caption="Follow along with exercises designed to relax and strengthen eye muscles.">
-                    <h4>Guided Eye Exercise</h4>
+                <h4 class="my-2">Key Features</h4>
+                <p class="text-dark my-sm-1">Insert description TBC</p>
+                <div class="features my-5 d-flex align-items-center">
+                    <div class="er text-center">
+                        <img class="" src="assets/eyeRest/guided_eye.png" 
+                        data-full="assets/eyeRest/guided_eye_full.png" alt="Guided Eye Exercise"
+                        data-caption="Follow along with exercises designed to relax and strengthen eye muscles.">
+                        <h4>Guided Eye Exercise</h4>
+                    </div>
+
+                    <div class="er text-center">
+                        <img class="" src="assets/eyeRest/eye_activity.png" alt="Eye Activity Tracker (via Camera)"
+                        data-full="assets/eyeRest/activity_full.png"
+                        data-caption="Utilizes Google MediaPipe Face Landmarker to monitor eye movements (like blinks and rolls) during exercises, providing feedback on activity.">
+                        <h4>Eye Activity Tracker</h4>
+                    </div>
+                    <div class="er text-center">
+                        <img class="" src="assets/eyeRest/usage_insights.png" alt="Usage Insights"
+                        data-full="assets/eyeRest/insight_full.png"
+                        data-caption="View statistics on your eye exercise activity (like blink counts and eye rolls) to understand your patterns.">
+                        <h4>Usage Insights</h4>
+                    </div>
                 </div>
 
-                <div class="er text-center">
-                    <img class="" src="assets/eyeRest/eye_activity.png" alt="Eye Activity Tracker (via Camera)"
-                    data-full="assets/eyeRest/activity_full.png"
-                    data-caption="Utilizes Google MediaPipe Face Landmarker to monitor eye movements (like blinks and rolls) during exercises, providing feedback on activity.">
-                    <h4>Eye Activity Tracker</h4>
-                </div>
-                <div class="er text-center">
-                    <img class="" src="assets/eyeRest/usage_insights.png" alt="Usage Insights"
-                    data-full="assets/eyeRest/insight_full.png"
-                    data-caption="View statistics on your eye exercise activity (like blink counts and eye rolls) to understand your patterns.">
-                    <h4>Usage Insights</h4>
-                </div>
-            </div>
+                <!-- Modals used for key features -->
+                <div id="imgModal" class="modal">
+                    <div class="modal-box">
+                        <span class="close">&times;</span>
 
-            <!-- Modals used for key features -->
-            <div id="imgModal" class="modal">
-                <div class="modal-box">
-                    <span class="close">&times;</span>
+                        <div class="modal-content-flex">
+                            <!-- image -->
+                            <div class="modal-left">
+                                <img id="fullImg">
+                            </div>
 
-                    <div class="modal-content-flex">
+                            <!-- Text -->
+                            <div class="modal-right">
+                                <h4 id="modalTitle"></h4>
+                                <p id="caption"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <h4>Architecture</h4>
+                <div class="d-lg-flex boxSpacing align-items-center arch">
+                    
+                    <img id="arch_img" class="mx-md-4 shadow-box-left" src="assets/eyeRest/KirbyMart_system.png" 
+                    alt="System Architecture">
+
+                    <div class="arch-brief mx-md-4 pl-lg-4 mt-md-5"> 
+                        <p class="text-dark mb-0">The system follows a mobile-based architecture integrating AI processing with cloud data storage. </p>
+                        
+                        <!-- collapse info -->
+                        <button class="align-items-center btn" type="button" data-bs-toggle="collapse" data-bs-target="#demo" aria-expanded="false" aria-controls="demo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                            </svg>
+                        </button >
+                        <div id="demo" class="collapse">
+                            <div class="arch-desc">
+                                <h6>Frontend:</h6>
+                                <p>Developed using Kotlin and Jetpack Compose.</p>
+
+                                <h6>Backend:</h6>
+                                <p>Core processor is Google MediaPipe Face Landmarker model - analyzes the user’s eye movements captured via the device camera.</p>
+
+                                <h6>Database:</h6>
+                                <p>Firebase Firestore as the cloud database - stores processed user data, including profile information, historical exercise results, daily snooze counts and total timer duration. 
+                                    It is structured per user, allowing personalized statistics.</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                </div>
+                            
+                <!-- Modals used for arch -->
+                <div id="imgModal-arch" class="modal">
+                    <div class="modal-box arch-box">
+                        <span class="closeBtn_arch">&times;</span>
+
                         <!-- image -->
                         <div class="modal-left">
-                            <img id="fullImg">
+                            <img id="full_arch_img">
                         </div>
 
                         <!-- Text -->
                         <div class="modal-right">
-                            <h4 id="modalTitle"></h4>
-                            <p id="caption"></p>
+                            <h4 id="arch-title"></h4>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <br>
 
-            <h4 class="my-5">Architecture</h4>
-            <div class="d-lg-flex boxSpacing align-items-center arch">
-                
-                <img id="arch_img" class="mx-md-4 shadow-box-left" src="assets/eyeRest/KirbyMart_system.png" 
-                alt="System Architecture">
-
-                <div class="arch-brief mx-md-4 pl-lg-4 mt-md-5"> 
-                    <p class="text-dark mb-0">The system follows a mobile-based architecture integrating AI processing with cloud data storage. </p>
+                <h4>Demo Video</h4>
+                <div class="d-lg boxSpacing align-items-center text-center">
                     
-                    <!-- collapse info -->
-                    <button class="align-items-center btn" type="button" data-bs-toggle="collapse" data-bs-target="#demo" aria-expanded="false" aria-controls="demo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
-                        </svg>
-                    </button >
-                    <div id="demo" class="collapse">
-                        <div class="arch-desc">
-                            <h6>Frontend:</h6>
-                            <p>Developed using Kotlin and Jetpack Compose.</p>
-
-                            <h6>Backend:</h6>
-                            <p>Core processor is Google MediaPipe Face Landmarker model - analyzes the user’s eye movements captured via the device camera.</p>
-
-                            <h6>Database:</h6>
-                            <p>Firebase Firestore as the cloud database - stores processed user data, including profile information, historical exercise results, daily snooze counts and total timer duration. 
-                                It is structured per user, allowing personalized statistics.</p>
-                        </div>
+                    <div class="video embed-responsive embed-responsive-16by9">
+                    <iframe class="frame-video" width="860" height="515" src="https://www.youtube.com/embed/nXsJuQQ9Jn0?si=l_aGNkUOCx4GGN0U" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
+
+                    
                 
                 </div>
+            </div>
             
-            </div>
-                        
-            <!-- Modals used for arch -->
-            <div id="imgModal-arch" class="modal">
-                <div class="modal-box arch-box">
-                    <span class="closeBtn_arch">&times;</span>
-
-                    <!-- image -->
-                    <div class="modal-left">
-                        <img id="full_arch_img">
-                    </div>
-
-                    <!-- Text -->
-                    <div class="modal-right">
-                        <h4 id="arch-title"></h4>
-                    </div>
-                </div>
-            </div>
-
-
-            <h4 class="my-5">Demo Video</h4>
-            <div class="d-lg boxSpacing align-items-center text-center">
-                
-                <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="860" height="515" src="https://www.youtube.com/embed/nXsJuQQ9Jn0?si=l_aGNkUOCx4GGN0U" title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-                
-            
-            </div>
         </div>
     </section>
 
@@ -198,6 +201,10 @@
         fetch("footer.html")
         .then(res => res.text())
         .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+
+        function isMobile() {
+            return window.innerWidth <= 576; // Bootstrap sm breakpoint
+        }
 
         // load modal for key features
         let modal = document.getElementById("imgModal");
@@ -234,10 +241,16 @@
         let arch_title = document.getElementById("arch-title");
         let closeBtn_arch = document.getElementsByClassName("closeBtn_arch")[0];
 
+        // Open modal (desktop only)
         arch_img.onclick = function() {
-            modal_arch.style.display = "block";
-            full_arch_img.src = this.src;  // show full image
-            arch_title.innerHTML = this.alt; // title from alt
+            if (!isMobile()) {
+                modal_arch.style.display = "flex"; // flex for centering
+                full_arch_img.src = this.src;      // show full image
+                arch_title.innerHTML = this.alt;   // title from alt
+            } else {
+                // Optional: for mobile, you can let user zoom image instead
+                console.log("Modal disabled on mobile");
+            }
         }
 
         // Close modal

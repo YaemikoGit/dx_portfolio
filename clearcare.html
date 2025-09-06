@@ -111,214 +111,217 @@
     <!-- Highlight -->
     <section class="moreInfo">
         <div class="container">
-            <h3 class="text-center">Highlights</h3>
+            <div class="inner-wrapper">
+                <h3 class="text-center">Highlights</h3>
 
-            <h4 class="my-3">Key Features</h4>
-            <div class="d-lg-flex boxSpacing align-items-center">
-                <img id="arch_img" class="mx-md-4 p-3 shadow-box-left" src="assets/clearCare/clearcare_useCase.png" alt="Use case">
+                <h4 class="my-3">Key Features</h4>
+                <div class="d-lg-flex boxSpacing align-items-center">
+                    <img id="arch_img" class="mx-md-4 p-3 shadow-box-left" src="assets/clearCare/clearcare_useCase.png" alt="Use case">
 
-                <div class="use-case mx-md-4 pl-lg-4 mt-md-5"> 
-                    <p class="text-dark mb-0">In this module, the team has come up with a few main user features essential for the Clear Care system. 
-                        This diagram depicts which users (Doctor and Nurse) will require which user features as shown in the oval shape.</p>
+                    <div class="use-case mx-md-4 pl-lg-4 mt-md-5"> 
+                        <p class="text-dark mb-0">In this module, the team has come up with a few main user features essential for the Clear Care system. 
+                            This diagram depicts which users (Doctor and Nurse) will require which user features as shown in the oval shape.</p>
+                        
+                        <!-- collapse info -->
+                        <button class="align-items-center btn" type="button" data-bs-toggle="collapse" data-bs-target="#demo" aria-expanded="false" aria-controls="demo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                            </svg>
+                        </button >
+                        <div id="demo" class="collapse">
+                            <div class="arch-desc">
+                                <h6>User Profile Management:</h6>
+                                <p>Users can view and edit their profile details.</p>
+
+                                <h6>View & Export Medical Record:</h6>
+                                <ul>
+                                    <li>Doctors and nurses can view medical records associated with their patients.</li>
+                                    <li>Doctors and nurses can also export medical records to any format they wish.</li>
+                                </ul>
+                                
+                                <h6>Create Patient Medical Record</h6>
+                                <p>Doctors can create a medical record for a patient, ensuring it remains permanently stored.</p>
+
+                                <h6>Filing Erratum to Update Medical Records</h6>
+                                <p>Doctors can file an erratum to update the original patient's medical record.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <br>
+
+                <h4 class="my-5">Architecture</h4>
+                <div class="d-lg-flex boxSpacing align-items-center">
+
+                    <div class="arch-brief mx-md-4 pl-lg-4 mt-md-5"> 
+                        <p class="text-dark mb-0">The Account and Data Hub (Module 1) serves as the core data management module in the ClearCare system, 
+                            responsible for user authentication, profile management, and secure medical record handling.</p>
                     
-                    <!-- collapse info -->
-                    <button class="align-items-center btn" type="button" data-bs-toggle="collapse" data-bs-target="#demo" aria-expanded="false" aria-controls="demo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
-                        </svg>
-                    </button >
-                    <div id="demo" class="collapse">
-                        <div class="arch-desc">
-                            <h6>User Profile Management:</h6>
-                            <p>Users can view and edit their profile details.</p>
+                    </div>
 
-                            <h6>View & Export Medical Record:</h6>
-                            <ul>
-                                <li>Doctors and nurses can view medical records associated with their patients.</li>
-                                <li>Doctors and nurses can also export medical records to any format they wish.</li>
-                            </ul>
+                    <div id="architecture_img" class="image-wrapper mx-md-4 shadow-box-left">
+                        <img src="assets/clearCare/clearcare_comp_prev.png" 
+                            alt="Diagram of System"
+                            data-full="assets/clearCare/clearcare_component.png">
                             
-                            <h6>Create Patient Medical Record</h6>
-                            <p>Doctors can create a medical record for a patient, ensuring it remains permanently stored.</p>
-
-                            <h6>Filing Erratum to Update Medical Records</h6>
-                            <p>Doctors can file an erratum to update the original patient's medical record.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-            <br>
-
-            <h4 class="my-5">Architecture</h4>
-            <div class="d-lg-flex boxSpacing align-items-center">
-
-                <div class="arch-brief mx-md-4 pl-lg-4 mt-md-5"> 
-                    <p class="text-dark mb-0">The Account and Data Hub (Module 1) serves as the core data management module in the ClearCare system, 
-                        responsible for user authentication, profile management, and secure medical record handling.</p>
-                
-                </div>
-
-                <div id="architecture_img" class="image-wrapper mx-md-4 shadow-box-left">
-                    <img src="assets/clearCare/clearcare_comp_prev.png" 
-                        alt="Diagram of System"
-                        data-full="assets/clearCare/clearcare_component.png">
-                        
-                    <div class="overlay">
-                        <span class="fw-bold">Click for bigger preview</span>
-                    </div>
-                </div>
-                
-                <!-- Modals used for diagram id is diagram_img-->
-                <div id="imgModal-arch" class="modal">
-                    <div class="modal-box arch-box">
-                        <span class="closeBtn_arch">&times;</span>
-                        
-                        <div class="modal-left">
-                            <img id="full_arch_img">
-                        </div>
-
-                        <div class="modal-right">
-                            <h4 id="arch-title"></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        
-            
-
-            <h4 class="my-5">Diagram of System</h4>
-            <div class="d-lg-flex boxSpacing diagram_img align-items-center">
-
-                <div id="diagram_img" class="image-wrapper mx-md-4 p-3 shadow-box-left">
-                    <a href="assets/clearCare/clearCare_class.pdf">
-                        <img src="assets/clearCare/clearcare_class_prev.png" 
-                        alt="Diagram of System">
-                        
                         <div class="overlay">
-                            <span class="fw-bold">Click for bigger preview (pdf)</span>
+                            <span class="fw-bold">Click for bigger preview</span>
                         </div>
-                    </a>
-                </div>
-
-                <div class="arch-brief mx-md-4 pl-lg-4 mt-md-5"> 
-                    <p class="text-dark mb-3">The system follows a layered architecture utilizing the MVC (Model-View-Controller) pattern for the presentation layer, 
-                        a domain model for business logic, and a combination of data mapper and gateway patterns for the data layer to ensure modularity, maintainability, and security.</p>
-                </div>
-            </div>
-
-
-
-            <h4 class="my-5">Business Process: Create Patient Medical Record </h4>
-            <div class="d-lg-flex boxSpacing diagram_img align-items-center">
-
-                <div class="arch-brief mx-md-4 pl-lg-4 mt-md-5"> 
-                    <p class="text-dark mb-3">The implementation follows a Table Module Pattern, which maps directly to database tables, and a Table Data Gateway Pattern to handle database communication.</p>
-                    <p class="text-dark mb-3">This diagram depicts a systematic flow of creating a Patient Medical Record with various tables, classes and the database used in this process.</p>
-                </div>
-
-                <div id="diagram_img" class="image-wrapper mx-md-4 p-3 shadow-box-left">
-                    <a href="assets/clearCare/clearcare_Seq.pdf">
-                        <img src="assets/clearCare/clearcare_seq_prev.png" 
-                        alt="Business Process">
-                        
-                        <div class="overlay">
-                            <span class="fw-bold">Click for bigger preview (pdf)</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-
-            <h4 class="my-5">Screenshots of the website</h4>
-            <p class="text-dark mb-3">TBC</p>
-            <!-- <div class="cont-carou my-5">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active popup-large">
-                            <img src="assets/errandGo/carousel/post_carou.png" class="d-block w-100" 
-                            alt="Post Page"
-                            data-full="assets/errandGo/popup_img/post_pop.png"
-                            data-full2="assets/errandGo/popup_img/form_pop.png"
+                    
+                    <!-- Modals used for diagram id is diagram_img-->
+                    <div id="imgModal-arch" class="modal">
+                        <div class="modal-box arch-box">
+                            <span class="closeBtn_arch">&times;</span>
                             
-                            data-caption1="Post page with color-coded status, buttons and filters."
-                            data-caption2="Post form page with appropriate fields for clear filling.">
-
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                            <div class="modal-left">
+                                <img id="full_arch_img">
                             </div>
-                        </div>
 
-                        <div class="carousel-item popup-large">
-                            <img src="assets/errandGo/carousel/profile_caro.png" class="d-block w-100" 
-                            alt="Profile Page"
-                            data-full="assets/errandGo/popup_img/profile_pop.png"
-                            data-caption1="Profile Page where users can check out their reviews as runners or edit their profile.">
-
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item popup-medium">
-                            <img src="assets/errandGo/carousel/browse_carou.png" class="d-block  w-100" 
-                            alt="Browse Errands Page"
-                            data-full="assets/errandGo/popup_img/browse_pop.png"
-                            data-caption1="Browse Errands page for runners to browse through available errands to take on..">
-
-                            <div class="carousel-caption d-none d-md-block text-dark">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                            <div class="modal-right">
+                                <h4 id="arch-title"></h4>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-            </div>
-
-            <div id="carouselModal" class="modal">
-                <div class="modal-box">
-                    <span class="close">&times;</span>
-
-                    <div class="modal-content-flex">
-                        
-                        <div class="modal-left">
                             
-                            <div id="singleWrapper">
-                            <img id="fullImgSingle">
-                            <p id="captionSingle" class="img-caption"></p>
-                            </div>
+                
 
+                <h4 class="my-5">Diagram of System</h4>
+                <div class="d-lg-flex boxSpacing diagram_img align-items-center">
+
+                    <div id="diagram_img" class="image-wrapper mx-md-4 p-3 shadow-box-left">
+                        <a href="assets/clearCare/clearCare_class.pdf">
+                            <img src="assets/clearCare/clearcare_class_prev.png" 
+                            alt="Diagram of System">
                             
-                            <div id="doubleWrapper" style="display:none;">
-                            <div class="double-img">
-                                <img id="fullImg1">
-                                <p id="caption1" class="img-caption"></p>
+                            <div class="overlay">
+                                <span class="fw-bold">Click for bigger preview (pdf)</span>
                             </div>
-                            <div class="double-img">
-                                <img id="fullImg2">
-                                <p id="caption2" class="img-caption"></p>
-                            </div>
-                            </div>
-                        </div>
+                        </a>
+                    </div>
 
+                    <div class="arch-brief mx-md-4 pl-lg-4 mt-md-5"> 
+                        <p class="text-dark mb-3">The system follows a layered architecture utilizing the MVC (Model-View-Controller) pattern for the presentation layer, 
+                            a domain model for business logic, and a combination of data mapper and gateway patterns for the data layer to ensure modularity, maintainability, and security.</p>
                     </div>
                 </div>
+
+
+
+                <h4 class="my-5">Business Process: Create Patient Medical Record </h4>
+                <div class="d-lg-flex boxSpacing diagram_img align-items-center">
+
+                    <div class="arch-brief mx-md-4 pl-lg-4 mt-md-5"> 
+                        <p class="text-dark mb-3">The implementation follows a Table Module Pattern, which maps directly to database tables, and a Table Data Gateway Pattern to handle database communication.</p>
+                        <p class="text-dark mb-3">This diagram depicts a systematic flow of creating a Patient Medical Record with various tables, classes and the database used in this process.</p>
+                    </div>
+
+                    <div id="diagram_img" class="image-wrapper mx-md-4 p-3 shadow-box-left">
+                        <a href="assets/clearCare/clearcare_Seq.pdf">
+                            <img src="assets/clearCare/clearcare_seq_prev.png" 
+                            alt="Business Process">
+                            
+                            <div class="overlay">
+                                <span class="fw-bold">Click for bigger preview (pdf)</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+
+                <h4 class="my-5">Screenshots of the website</h4>
+                <p class="text-dark mb-3">TBC</p>
+                <!-- <div class="cont-carou my-5">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active popup-large">
+                                <img src="assets/errandGo/carousel/post_carou.png" class="d-block w-100" 
+                                alt="Post Page"
+                                data-full="assets/errandGo/popup_img/post_pop.png"
+                                data-full2="assets/errandGo/popup_img/form_pop.png"
+                                
+                                data-caption1="Post page with color-coded status, buttons and filters."
+                                data-caption2="Post form page with appropriate fields for clear filling.">
+
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item popup-large">
+                                <img src="assets/errandGo/carousel/profile_caro.png" class="d-block w-100" 
+                                alt="Profile Page"
+                                data-full="assets/errandGo/popup_img/profile_pop.png"
+                                data-caption1="Profile Page where users can check out their reviews as runners or edit their profile.">
+
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item popup-medium">
+                                <img src="assets/errandGo/carousel/browse_carou.png" class="d-block  w-100" 
+                                alt="Browse Errands Page"
+                                data-full="assets/errandGo/popup_img/browse_pop.png"
+                                data-caption1="Browse Errands page for runners to browse through available errands to take on..">
+
+                                <div class="carousel-caption d-none d-md-block text-dark">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="carouselModal" class="modal">
+                    <div class="modal-box">
+                        <span class="close">&times;</span>
+
+                        <div class="modal-content-flex">
+                            
+                            <div class="modal-left">
+                                
+                                <div id="singleWrapper">
+                                <img id="fullImgSingle">
+                                <p id="captionSingle" class="img-caption"></p>
+                                </div>
+
+                                
+                                <div id="doubleWrapper" style="display:none;">
+                                <div class="double-img">
+                                    <img id="fullImg1">
+                                    <p id="caption1" class="img-caption"></p>
+                                </div>
+                                <div class="double-img">
+                                    <img id="fullImg2">
+                                    <p id="caption2" class="img-caption"></p>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
             </div> -->
+            </div>
+            
         </div>
     </section>
 

@@ -377,6 +377,7 @@ textarea {
   }
   h4 {
     font-size: 18px;
+    margin: 5px 10px !important; 
   }
   p {
     font-size: 12px;
@@ -406,6 +407,7 @@ textarea {
     margin-top: 20px;
   }
   .about {
+    width: auto;
     margin-top: 30px;
     padding: 20px 5px;
   }
@@ -473,7 +475,7 @@ textarea {
   }
   .projectBox img {
     width: 95%;
-    height: 95%;
+    height: auto;
     margin: 0px 8px;
   }
   .moreInfo {
@@ -513,9 +515,65 @@ textarea {
   .drink-mobile2 img {
     width: 65% !important;
   }
+
+  /*new */
+  .features {
+    display: block !important;
+  }
+  .features .er {
+    margin-top: 40px;
+  }
+  .features img {
+    width: 75% !important;
+    box-shadow: none;
+  }
+
+  .arch-brief {
+    width: 90% !important;
+  }
+  .arch-brief p {
+    margin: 20px 0 !important;
+  }
+  #arch_id {
+    text-align: center;
+  }
+  #demo {
+    width: 350px !important;
+  }
+
+  #arch_img {
+    width: 80% !important;
+    height: auto;
+  }
+
+  .diagram {
+    display: block;
+  }
+
+  #diagram_img{
+    margin: 0 15px;
+    width: 90% !important;
+    box-shadow: 2px 2px 10px 3px #999999;
+  }
+
+  #carouselExampleCaptions {
+    max-width: 95% !important;
+    
+  }
+
+  #carouselExampleCaptions img {
+    box-shadow: none;
+  }
+
+
+  .video, .frame-video {
+    width: 95% !important;
+    height: auto !important;
+  }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   ul {
     text-align: left;
   }

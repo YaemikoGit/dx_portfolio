@@ -114,3 +114,50 @@
   padding: 1rem;
   background: white;
 }
+
+
+
+@media screen and (max-width: 576px) {
+  .modal-box {
+    width: 90%;           
+    margin: 5% auto;     
+    padding: 15px;
+  }
+
+  .modal-content-flex {
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+  }
+
+  .modal-right {
+    padding: 10px 0;        
+  }
+
+  .modal-left img {
+    width: 70%;            
+    height: auto;
+    padding: 0px;
+    margin-top: 30px;
+  }
+
+  .modal-right h5 {
+    margin-bottom: 15px;    
+  }
+
+  #caption {
+    margin-top: 10px;       
+    font-size: 16px;        
+    line-height: 1.2em;
+  }
+
+  .arch-box{
+    justify-content: center;
+  }
+  .arch-box img {
+
+    width: 90%;
+  }
+}
+
+

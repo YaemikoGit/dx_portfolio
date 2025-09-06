@@ -145,3 +145,39 @@
   padding: 1rem;
   background: white;
 }
+
+
+@media screen and (max-width: 576px) {
+  .modal-box {
+    width: 95%;           
+    margin: 10% auto;     
+    padding: 15px;
+  }
+
+  .modal-content-flex {
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+  }
+
+  .modal-right {
+    padding: 10px 0;        
+  }
+
+  .modal-left img {
+    width: 80%;            
+    height: auto;
+    padding: 0px;
+    margin-top: 30px;
+  }
+
+  .modal-right h5 {
+    margin-bottom: 15px;    
+  }
+
+  #caption {
+    margin-top: 10px;       
+    font-size: 16px;        
+    line-height: 1.2em;
+  }
+}
