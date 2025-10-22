@@ -289,11 +289,11 @@ nav li {
 }
 
 .nav-item a:hover {
-  color: #e04ba0;
+  color: #e04ba0 !important;
 }
 
 .nav-item a.active {
-  border-bottom: 3px solid #333344;
+  border-bottom: 3px solid #333344 !important;
 }
 
 header {
