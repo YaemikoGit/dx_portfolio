@@ -288,11 +288,11 @@ nav li {
   font-weight: 800;
 }
 
-nav a:hover {
+.nav-item a:hover {
   color: #e04ba0;
 }
 
-.topnav a.active {
+.nav-item a.active {
   border-bottom: 3px solid #333344;
 }
 
